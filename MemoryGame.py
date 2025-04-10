@@ -34,11 +34,6 @@ fall = pygame.image.load('Seasons-Fall.jpg')
 # second level additonal pics
 summer = pygame.image.load('Seasons-Summer.jpg')
 pirates = pygame.image.load('Pirates.jpg')
-##ocean = pygame.image.load('Ocean.jpg')
-### third level additonal pics
-##ants = pygame.image.load('Ants.jpg')
-##apples = pygame.image.load('Apples.jpg')
-##bees = pygame.image.load('Bees.jpg')
 
 gameIcon = pygame.image.load('teky.png')
 pygame.display.set_icon(gameIcon)
@@ -82,7 +77,6 @@ def about():
         gameDisplay.blit(background, (00,00))
 # References to images used
         text('References:',display_width/2,display_height/1.25,15,white,'coolvetica rg.ttf')
-        #text(' - HỌC VIỆN SÁNG TẠO TRẺ TEKY, from http://www.teky.edu.vn/',display_width/2,display_height/1.2,15,white,'coolvetica rg.ttf')
       
 
 
@@ -101,7 +95,6 @@ def game_intro():
                 quit()
         gameDisplay.blit(background, (00,00))
         text('Picture Puzzle Game',display_width/2,display_height/7,50,red,'crackman.ttf')
-        #text('HỌC VIỆN TEKY',display_width/2,display_height/5,25,white,'coolvetica rg.ttf')
 
         button("Start Game",(display_width/2)-100,200,200,100,white,red,red,white,game_loop)
         button("About",(display_width/2)-100,325,200,100,white,red,red,white,about)
